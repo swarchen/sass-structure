@@ -1,0 +1,22 @@
+.rotate {
+	@include rotate(3deg);
+}
+
+.rotate2 {
+	@include rotate2(6);
+}
+
+p {
+	@include text(1.25em, 1.2, bold);
+	@include mq-small-up {
+		@include text(1.5em, 1.5, bold);
+	}
+}
+
+.medium {
+	@include text(1em);
+	@include mq-small {
+		@include text(2em);
+	}
+}
+

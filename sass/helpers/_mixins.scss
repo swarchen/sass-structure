@@ -1,0 +1,67 @@
+@mixin flex {
+	display: -webkit-flex;
+	display: flex;
+}
+
+@mixin rotate($deg) {
+    -webkit-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    transform: rotate($deg);
+}
+
+@mixin rotate2($deg) {
+	-webkit-transform: rotate(#{$deg}deg);
+	-ms-transform: rotate(#{$deg}deg);
+	transform: rotate(#{$deg}deg);
+}
+
+@mixin text($size, $line-height: null, $weight: null, $color: null) {
+	font-size: $size;
+	line-height: $line-height;
+	font-weight: $weight;
+	color: $color;
+}
+
+
+/**
+ * Media query
+ */
+@mixin mq-small-up {
+	@media (min-width: $screen-small) {
+		@content; 
+	}
+}
+
+@mixin mq-small {
+	@media (min-width: $screen-small) and (max-width: $screen-medium - 1px) {
+		@content; 
+	}
+}
+
+@mixin mq-medium {
+	@media (min-width: $screen-medium) and (max-width: $screen-large - 1px) {
+		@content; 
+	}
+}
+
+@mixin mq-medium-up {
+	@media (min-width: $screen-medium) {
+		@content; 
+	}
+}
+
+@mixin mq-large-up {
+	@media (min-width: $screen-large) {
+        @content;
+    } 
+}
+
+/**
+ * there are many libraries of established Sass mixins to choose from:
+ * Bourbon(http://bourbon.io)isasmallmixinlibrarythat adds vendor prefixes and performs other fancy magic for many CSS properties such as animation (page 338), transitions (page 330), font-face (page 131) and more. It’s a great little set of tools.
+ * Neat(http://neat.bourbon.io),fromthesamepeoplewho
+ * created Bourbon, is a set of mixins that make creating CSS grids (see Chapter 16) easier.
+ * Susy (http://susy.oddbird.net) is another set of mixins for creating CSS grids. This library is very popular with Sass folks.
+ * Breakpoint(http://breakpoint-sass.com)isamixinlibrary with a single purpose: to make writing media queries (page 460) fast and simple.
+ * Compass (http://compass-style.org) is actually a bit more than a mixin library. It does contain loads of useful mixins but it does a lot more, including helping you create CSS sprites (page 298). Compass is big, and offers so many features that the creators call it a CSS authoring framework.
+ */

@@ -1,0 +1,24 @@
+$logo-color: lightSeaGreen;
+
+/* corporate color palette */
+$primary-dark: #06888A;
+$primary-light:  #FFEED5;
+$primary-mid: #DC664A;
+$secondary-dark: #5A3928;
+$secondary-light: #FDC149;
+
+/* functional variables */
+$page-background: $primary-light;
+$headline-color: $primary-dark;
+$text-color: $primary-dark;
+$border-light: $secondary-light;
+$border-dark: $primary-dark;
+
+/* font-stack */
+$headline-font: 'Varela Round', Helvetica, Arial, sans-serif;
+$body-font: 'Palatino Linotype', Baskerville, serif;
+
+/* media query */
+$screen-small : 400px;
+$screen-medium : 760px;
+$screen-large: 1000px;

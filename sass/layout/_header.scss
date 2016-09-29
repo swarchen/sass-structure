@@ -1,0 +1,12 @@
+%headline {
+	font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+
+h1{
+	@extend %headline;
+	color: #222;
+}
+
+h2 {
+	@extend %headline;
+}
